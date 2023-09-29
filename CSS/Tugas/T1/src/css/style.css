@@ -1,0 +1,165 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+}
+
+.navigasi {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    background-color: grey;
+    border-bottom: 1.5px solid white;
+}
+
+.navigasi-isi{
+    margin: 0px 9% ;
+    background-color: white;
+    width: 20%;
+    height: 35%;
+}
+
+.isi {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5%;
+    width: 100%;
+    height: 45vh;
+    background-color: grey;
+    border-bottom: 1px solid white;
+}
+
+.isi-kiri {
+    width: 50%;
+    height: 98%;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+.isi-kiri-1 {
+    width: 94%;
+    height: 60%;
+    margin: 1% 3% 0px;
+    background-color: grey;
+}
+
+.isi-kiri-2 {
+    width: 60%;
+    height: 10%;
+    margin: 3% 20%;
+    background-color: grey;
+}
+.isi-kanan {
+    width: 50%;
+    height: 98%;
+    background-color: red;
+    border: 1px solid grey;
+}
+
+.isi-kanan-atas {
+    justify-content: center;
+    display: flex;
+    gap: 5%;
+    padding: 0% 10% 0% 0%;
+    width: 100%;
+    height: 62%;
+    background-color: white;
+}
+
+.kotak-1 {
+    margin: 8px 0px 0px 0px;
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+}
+.kotak-2 {
+    margin: 4px 0px 0px 0px;
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+}
+.kotak-3 {
+    margin: 4px 0px 0px 0px;
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+}
+.kotak-4 {
+    margin: 4px 0px 0px 0px;
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+}
+
+.lingkaran {
+    margin: 8px 0% 0px 0%;
+    width: 132px;
+    height: 132px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.isi-kanan-bawah {
+    width: 100%;
+    height: 38%;
+    background-color: white;
+}
+
+.persegi-panjang-1 {
+    margin: 0% 5% 0%;
+    width: 90%;
+    height: 25%;
+    background-color: grey;
+}
+
+.persegi-panjang-2 {
+    margin: 3% 5% 50px;
+    width: 90%;
+    height: 25%;
+    background-color: grey;
+}
+
+.penutup {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5%;
+    width: 100%;
+    height: 48vh;
+    border: 8px solid grey;
+    background-color: white;
+}
+
+.penutup-kotak-1 {
+    margin-left: 3%;
+    width: 20%;
+    height: 90%;
+    background-color: grey;
+}
+.penutup-kotak-2 {
+    width: 30%;
+    height: 55%;
+    background-color: grey;
+}
+.penutup-kotak-3 {
+    width: 20%;
+    height: 90%;
+    background-color: grey;
+}
+.penutup-kotak-4 {
+    margin-right: 3%;
+    width: 30%;
+    height: 55%;
+    background-color: grey;
+}
