@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 90%;
+    height: 70vh;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 4vh;
+}
+
+.batas {
+    flex-direction: column;
+    width: 88%;
+    height: 96%;
+    background-color: white;
+}
+
+.kotak1 {
+    justify-content: center;
+    display: flex;
+    gap: 0 10%;
+    width: 100%;
+    height: 7%;
+    /* background-color: blue;
+    border: 1px solid black; */
+}
+.kotak1-1 {
+    width: 12%;
+    height: 100%;
+    background-color: white;
+    border-radius: 3vh;
+}
+.kotak1-2 {
+    width: 57%;
+    height: 100%;
+    background-color: grey;
+    border-radius: 3vh;
+}
+.kotak1-3 {
+    width: 12%;
+    height: 100%;
+    background-color: grey;
+    border-radius: 3vh;
+}
+
+.kotak2 {
+    display: flex;
+    width: 100%;
+    height: 71%;
+}
+.kotak-kiri {
+    width: 60%;
+    height: 100%;
+}
+.kotak-kiri-1 {
+    width: 100%;
+    height: 50%;
+}
+.kotak-kiri-2 {
+    width: 100%;
+    height: 20%;
+}
+.kotak-kiri-3 {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    height: 30%;
+}
+.box {
+    width: 30%;
+    height: 4vh;
+    background-color: grey;
+    border-radius: 3vh;
+}
+.lingkaran {
+    width: 4vh;
+    height: 4vh;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.kotak-kanan {
+    width: 40%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.kotak-kanan-atas {
+    width: 100%;
+    height: 60%;
+    /* background-color: yellow; */
+}
+.kotak-kanan-atas-space-atas {
+    width: 100%;
+    height: 30%;
+    /* background-color: black; */
+}
+.kotak-kanan-atas-box {
+    display: flex;
+    gap: 0 2%;
+    width: 100%;
+    height: 70%;
+    /* background-color: grey; */
+}
+.kotak-kanan-atas-kiri {
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    /* border: 1px solid black; */
+}
+.kotak-kanan-atas-kiri-1 {
+    width: 100%;
+    height: 48%;
+    background-color: grey;
+    border-radius: 2vh;
+}
+.kotak-kanan-atas-kiri-2 {
+    width: 100%;
+    height: 48%;
+    background-color: grey;
+    border-radius: 2vh;
+}
+.kotak-kanan-atas-kanan {
+    width: 50%;
+    height: 100%;
+    background-color: grey;
+    border-radius: 2vh;
+}
+
+.kotak-kanan-bawah {
+    padding-top: 2%;
+    width: 100%;
+    height: 40%;
+    /* background-color: red; */
+}
+.kotak-kanan-bawah-box {
+    width: 100%;
+    height: 75%;
+    background-color: grey;
+    border-radius: 2vh;
+}
+
+.kotak3 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 23%;
+    padding: 3% 2.5% 0 2.5% ;
+    width: 100%;
+    height: 22%;
+    background-color: grey;
+    border-radius: 3vh 3vh 0 0;
+}
+.kotak3-lingkaran {
+    width: 4vh;
+    height: 4vh;
+    background-color: white;
+    border-radius: 50%;
+}

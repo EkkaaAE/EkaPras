@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.kotak-inner1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 70%;
+    height: 70vh;
+    position: absolute;
+}
+.kotak-inner2 {
+    border: 2px solid black;
+    width: 65%;
+    height: 45vh;
+    position: absolute;
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 80px;
+    aspect-ratio: 1/1;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.box1 {
+    position: absolute;
+    top: -40px;
+    left: 44%;
+}
+.box2 {
+    position: absolute;
+    top: 37%;
+    right: -40px;
+}
+.box3 {
+    position: absolute;
+    bottom: -40px;
+    right: 44%;
+}
+.box4 {
+    position: absolute;
+    bottom: 37%;
+    left: -40px;
+}
+
+.box5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box6 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.box7 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.box8 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.box9 {
+    position: absolute;
+    top: -40px;
+    left: 47.3%;
+}
+.box10 {
+    position: absolute;
+    top: 46%;
+    right: -40px;
+}
+.box11 {
+    position: absolute;
+    bottom: -40px;
+    right: 47.3%;
+}
+.box12 {
+    position: absolute;
+    bottom: 43%;
+    left: -40px;
+}
