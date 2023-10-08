@@ -17,6 +17,7 @@
 .button-register {
     background: linear-gradient(140deg, rgba(79,173,230,1) 0%, rgba(123,95,214,1) 50%, rgba(166,20,198,1) 100%);
     animation: bg-color 2s infinite alternate;
+    color: white;
 }
 
 @keyframes bg-color {
