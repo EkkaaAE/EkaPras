@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px 20px 0;
+}
+.container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.container nav .title {
+  font-size: 28px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+.container nav .menu {
+  position: relative;
+  left: 45px;
+}
+.container nav .menu ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  gap: 40px;
+}
+.container nav .menu li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.container nav .menu ul li:nth-child(2) select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.container nav .profile ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+}
+.container nav .profile li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.container nav .profile ul li:nth-child(1) {
+  cursor: pointer;
+}
+.container nav .profile ul li:nth-child(2) {
+  margin-left: 30px;
+  color: white;
+  background-color: #dd3c56;
+  padding: 8px 17px;
+  border-radius: 5vh;
+  cursor: pointer;
+}
+.container main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 42vh;
+  margin-bottom: 10px;
+}
+.container main .main-left {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.container main .main-left p img {
+  width: 100px;
+  border-radius: 30px;
+  margin-right: 15px;
+}
+.container main .main-left p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-weight: 600;
+}
+.container main .main-left p a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  position: relative;
+  bottom: 8px;
+  margin-left: 6px;
+  border: 1px solid black;
+  border-radius: 5vh;
+  padding: 10px 15px;
+}
+.container main .main-left p a i {
+  font-size: 20px;
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+}
+.container main .main-right {
+  width: 49%;
+  height: 100%;
+  background-image: url(../assets/img/beach.jpg);
+  border-radius: 30px;
+  padding: 30px;
+}
+.container main .main-right .title-1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+.container main .main-right .description {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+.container main .main-right .description i {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 5px 8px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.container footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 42vh;
+}
+.container footer .footer-left {
+  width: 49%;
+  height: 100%;
+}
+.container footer .footer-left .contact {
+  margin-bottom: 164px;
+}
+.container footer .footer-left .contact ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.container footer .footer-left .contact ul li:nth-child(1) {
+  background-color: #dd3c56;
+  padding: 10px 15px;
+  border-radius: 5vh;
+  color: white;
+  cursor: pointer;
+}
+.container footer .footer-left .contact ul li:nth-child(1) i {
+  margin-left: 5px;
+}
+.container footer .footer-left .contact ul li:nth-child(2) a {
+  font-weight: 600;
+  color: black;
+}
+.container footer .footer-left .description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.container footer .footer-left .logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+.container footer .footer-right {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container footer .footer-right .location {
+  width: 49%;
+  height: 100%;
+  background-image: url(../assets/img/City_is_red_left.jpg);
+  border-radius: 5vh;
+  padding: 30px;
+}
+.container footer .footer-right .location .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 65px;
+}
+.container footer .footer-right .location .title p {
+  background-color: white;
+  color: black;
+  border-radius: 5vh;
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+.container footer .footer-right .location .title i {
+  padding: 8px 9px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container footer .footer-right .location .content {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.container footer .footer-right .location .description {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+.container footer .footer-right .scientists {
+  width: 49%;
+  height: 100%;
+  background-image: url(../assets/img/City_is_red_right.jpg);
+  border-radius: 5vh;
+  padding: 30px;
+}
+.container footer .footer-right .scientists .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 55px;
+}
+.container footer .footer-right .scientists .title p {
+  background-color: white;
+  color: black;
+  border-radius: 5vh;
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+.container footer .footer-right .scientists .title .profiles ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+}
+.container footer .footer-right .scientists .title .profiles ul li {
+  width: 40px;
+  aspect-ratio: 1/1;
+  background-color: #dd3c56;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.container footer .footer-right .scientists .title .profiles ul li:nth-child(1) {
+  position: relative;
+  right: -30px;
+}
+.container footer .footer-right .scientists .title .profiles ul li:nth-child(2) {
+  position: relative;
+  right: -15px;
+}
+.container footer .footer-right .scientists .title .profiles ul li:nth-child(3) {
+  position: relative;
+  right: 0px;
+}
+.container footer .footer-right .scientists .date {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.container footer .footer-right .scientists .description {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

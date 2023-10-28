@@ -1,0 +1,12 @@
+{
+  "name": "T7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "rune": "sass ./src/sass/style.scss ./src/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
