@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section aside {
+  width: 30%;
+  height: 100vh;
+  padding: 30px;
+}
+section aside .title {
+  display: flex;
+  flex-direction: column;
+}
+section aside .title h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+section aside .title h1:nth-child(1) {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: #d02326;
+  font-family: "Sedgwick Ave Display", cursive;
+}
+section aside .title h1:nth-child(1) i {
+  margin-right: 20px;
+  font-size: 30px;
+}
+section aside .title h1:nth-child(1) a {
+  color: black;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  margin-left: 40px;
+}
+section aside .title h1:nth-child(2) {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 20px;
+}
+section aside .title button {
+  padding: 20px 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: rgb(144, 0, 56);
+  background: linear-gradient(120deg, rgb(144, 0, 56) 0%, rgb(235, 6, 95) 42%, rgb(168, 7, 103) 62%, rgb(100, 8, 111) 84%, rgb(9, 9, 121) 100%);
+  margin-bottom: 20px;
+}
+section aside .title button i:nth-child(1) {
+  margin-right: 20px;
+}
+section aside .title button i:nth-child(2) {
+  margin-left: 150px;
+}
+section aside .title button a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+section aside .opsi table {
+  margin-bottom: 110px;
+  margin-left: 20px;
+}
+section aside .opsi table tr td {
+  height: 50px;
+  cursor: pointer;
+  color: gray;
+}
+section aside .opsi table tr td:nth-child(1) {
+  width: 30px;
+  font-size: 20px;
+}
+section aside .opsi table tr td:nth-child(2) {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+}
+section aside .as {
+  border-top: 2px solid #F8F8F8;
+  padding-top: 45px;
+}
+section aside .as table {
+  margin-left: 20px;
+}
+section aside .as table tr td {
+  height: 50px;
+  cursor: pointer;
+  color: gray;
+}
+section aside .as table tr td:nth-child(1) {
+  width: 30px;
+  font-size: 20px;
+}
+section aside .as table tr td:nth-child(2) {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+}
+section main {
+  width: 70%;
+  height: 100vh;
+  padding: 30px 30px 0 0;
+}
+section main nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+section main nav .search-bar {
+  width: 77%;
+  display: flex;
+  align-items: center;
+  background-color: #F8F8F8;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+section main nav .search-bar select {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+section main nav .search-bar input {
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  padding: 10px 15px;
+}
+section main nav .search-bar input:focus {
+  outline: none;
+}
+section main nav .search-bar button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 10px;
+}
+section main nav menu {
+  width: 22%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+section main nav menu .logo {
+  margin-left: 17px;
+  font-size: 25px;
+  cursor: pointer;
+}
+section main nav menu .logo:nth-child(4) {
+  margin-left: 17px;
+  padding-left: 17px;
+}
+section main nav menu .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-left: 3px solid #F8F8F8;
+  cursor: pointer;
+}
+section main nav menu .profile img {
+  width: 40px;
+  border-radius: 50%;
+  background-color: #F8F8F8;
+}
+section main nav menu .profile i {
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+section main .baner {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+section main .baner .box-1 {
+  width: 77%;
+  height: 100%;
+  background-color: #F8F8F8;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+section main .baner .box-1 img {
+  height: 100%;
+}
+section main .baner .box-1 .descriptions {
+  padding: 25px 40px 0;
+  font-family: "Outfit", sans-serif;
+}
+section main .baner .box-1 .descriptions p:nth-child(1) {
+  margin-bottom: 15px;
+}
+section main .baner .box-1 .descriptions p:nth-child(3) {
+  margin-top: 5px;
+}
+section main .baner .box-1 .descriptions .brands {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 18px;
+  margin-top: 10px;
+}
+section main .baner .box-1 .descriptions .brands img {
+  height: 25px;
+}
+section main .baner .box-1 .descriptions .brands div {
+  margin-left: 310px;
+  background-color: black;
+}
+section main .baner .box-1 .descriptions .brands div i {
+  padding: 20px 22px;
+  font-size: 20px;
+  cursor: pointer;
+}
+section main .baner .box-2 img {
+  height: 100%;
+  border-radius: 5px;
+}
+section main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 15px 0;
+}
+section main header div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+section main header div:nth-child(1) {
+  font-family: "Outfit", sans-serif;
+}
+section main header div:nth-child(1) p {
+  font-size: 25px;
+  font-weight: 300;
+}
+section main header div:nth-child(1) a {
+  color: black;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+section main header div:nth-child(2) {
+  gap: 25px;
+}
+section main .contents {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow-x: auto;
+  width: 100%;
+  height: 45vh;
+}
+section main .contents .card {
+  height: 100%;
+  aspect-ratio: 3/4;
+  border: 1px solid #F8F8F8;
+  padding: 10px;
+}
+section main .contents .card:hover {
+  border: 2px solid black;
+}
+section main .contents .card img {
+  padding-bottom: 15px;
+  width: 100%;
+  background-color: #F8F8F8;
+}
+section main .contents .card p {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+section main .contents .card .color {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section main .contents .card .color ul {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  list-style: none;
+  margin-top: 7px;
+}
+section main .contents .card .color ul li {
+  border: 1px solid #F8F8F8;
+  padding: 6px;
+  cursor: pointer;
+}
+section main .contents .card .color ul li:hover {
+  border: 1px solid black;
+}
+section main .contents .card .color ul li:nth-child(1) {
+  background-color: black;
+}
+section main .contents .card .color ul li:nth-child(2) {
+  background-color: white;
+}
+section main .contents .card .color ul li:nth-child(3) {
+  background-color: pink;
+}
+
+/*# sourceMappingURL=main-1.css.map */

@@ -1,0 +1,12 @@
+{
+  "name": "T8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gass": "sass ./src/sass/main-1.scss ./src/css/main-1.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

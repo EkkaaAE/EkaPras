@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    aside {
+        width: 30%;
+        height: 100vh;
+        padding: 30px;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            
+            h1 {
+                font-size: 30px;
+                margin-bottom: 20px;
+
+                &:nth-child(1) {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    color: #d02326;
+                    font-family: 'Sedgwick Ave Display', cursive;
+
+                    i {
+                        margin-right: 20px;
+                        font-size: 30px;
+                    }
+
+                    a {
+                        color: black;
+                        font-size: 15px;
+                        font-family: 'Montserrat', sans-serif;
+                        text-decoration: none;
+                        margin-left: 40px;
+                    }
+                }
+                &:nth-child(2) {
+                    font-family: 'Montserrat', sans-serif;
+                    margin-left: 20px;
+                }
+            }
+            button {
+                padding: 20px 0;
+                cursor: pointer;
+                border: none;
+                border-radius: 5px;
+                background: rgb(144,0,56);
+                background: linear-gradient(120deg, rgba(144,0,56,1) 0%, rgba(235,6,95,1) 42%, rgba(168,7,103,1) 62%, rgba(100,8,111,1) 84%, rgba(9,9,121,1) 100%);
+                margin-bottom: 20px;
+
+                i {
+                    &:nth-child(1) {
+                        margin-right: 20px;
+                    }
+                    &:nth-child(2) {
+                        margin-left: 150px;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .opsi table {
+            margin-bottom: 110px;
+            margin-left: 20px;
+            
+            tr {
+                
+                td {
+                    height: 50px;
+                    cursor: pointer;
+                    color: gray;
+
+                    &:nth-child(1) {
+                        width: 30px;
+                        font-size: 20px;
+                    }
+                    &:nth-child(2) {
+                        font-family: 'Outfit', sans-serif;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .as {
+            border-top: 2px solid #F8F8F8;
+            padding-top: 45px;
+
+            table {
+                margin-left: 20px;
+                
+                tr {
+                
+                    td {
+                        height: 50px;
+                        cursor: pointer;
+                        color: gray;
+
+                        &:nth-child(1) {
+                            width: 30px;
+                            font-size: 20px;
+                        }
+                        &:nth-child(2) {
+                            font-family: 'Outfit', sans-serif;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        width: 70%;
+        height: 100vh;
+        padding: 30px 30px 0 0;
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+
+            .search-bar {
+                width: 77%;
+                display: flex;
+                align-items: center;
+                background-color: #F8F8F8;
+                border-radius: 5px;
+                padding: 10px 20px;
+
+                select {
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    border: none;
+                }
+                
+                input {
+                    width: 80%;
+                    background-color: transparent;
+                    border: none;
+                    margin-left: 10px;
+                    padding: 10px 15px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                button {
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    margin-left: 10px;
+                }
+            }
+            menu {
+                width: 22%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+
+                .logo {
+                    margin-left: 17px;
+                    font-size: 25px;
+                    cursor: pointer;
+
+                    &:nth-child(4) {
+                        margin-left: 17px;
+                        padding-left: 17px;
+                    }
+
+                }
+
+                .profile {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    border-left: 3px solid #F8F8F8;
+                    cursor: pointer;
+
+                    img {
+                        width: 40px;
+                        border-radius: 50%;
+                        background-color: #F8F8F8;
+                    }
+
+                    i {
+                        font-size: 20px;
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .baner {
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            .box-1 {
+                width: 77%;
+                height: 100%;
+                background-color: #F8F8F8;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: row;
+
+                img {
+                    height: 100%;
+                }
+
+                .descriptions {
+                    padding: 25px 40px 0;
+                    font-family: 'Outfit', sans-serif;
+
+                    p {
+                        &:nth-child(1) {
+                            margin-bottom: 15px;
+                        }
+                        &:nth-child(3) {
+                            margin-top: 5px;
+                        }
+                    }
+
+                    .brands {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: row;
+                        gap: 18px;
+                        margin-top: 10px;
+
+                        img {
+                            height: 25px;
+                        }
+
+                        div {
+                            margin-left: 310px;
+                            background-color: black;
+
+                            i {
+                                padding: 20px 22px;
+                                font-size: 20px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .box-2 {
+
+                img {
+                    height: 100%;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            margin: 15px 0;
+
+            div {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+
+                &:nth-child(1) {
+                    font-family: 'Outfit', sans-serif;
+                    
+                    p {
+                        font-size: 25px;
+                        font-weight: 300;
+                    }
+                    a {
+                        color: black;
+                        margin-left: 10px;
+                        text-decoration: none;
+                        font-size: 15px;
+                    }
+                }
+                &:nth-child(2) {
+                    gap: 25px;
+                }
+            }
+        }
+
+        .contents {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            overflow-x: auto;
+            width: 100%;
+            height: 45vh;
+
+            .card {
+                height: 100%;
+                aspect-ratio: 3/4;
+                border: 1px solid #F8F8F8;
+                padding: 10px;
+
+                &:hover {
+                    border: 2px solid black;
+                }
+
+                img {
+                    padding-bottom: 15px;
+                    width: 100%;
+                    background-color: #F8F8F8;
+                }
+
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 12px;
+                }
+
+                .color {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5px;
+                        list-style: none;
+                        margin-top: 7px;
+
+                        li {
+                            border: 1px solid #F8F8F8;
+                            padding: 6px;
+                            cursor: pointer;
+
+                            &:hover {
+                                border: 1px solid black;
+                            }
+                            
+                            &:nth-child(1) {
+                                background-color: black;
+                            }
+                            &:nth-child(2) {
+                                background-color: white;
+                            }
+                            &:nth-child(3) {
+                                background-color: pink;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
