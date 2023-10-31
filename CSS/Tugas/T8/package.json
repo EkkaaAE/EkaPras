@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gass": "sass ./src/sass/main-1.scss ./src/css/main-1.css --watch"
+    "gass": "sass ./src/sass/main.scss ./src/css/main.css --watch"
   },
   "keywords": [],
   "author": "",
