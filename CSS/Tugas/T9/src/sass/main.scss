@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Sedgwick+Ave+Display&display=swap');
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 5%;
+        height: 101vh;
+        background-color: #EAEDFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        overflow: auto;
+        
+        .title {
+            margin-bottom: 35px;
+            
+            span {
+                font-family: 'Outfit', sans-serif;
+                font-size: 35px;
+                font-weight: 700;
+            
+                &:nth-child(1) {
+                    position: relative;
+                    left: 6px;
+                    color: #FC951C;
+                }
+                &:nth-child(2) {
+                    position: relative;
+                    right: 6px;
+                    color: black;
+                }
+            }
+        }
+    
+        ul {
+            list-style: none;
+        
+            li {
+                margin-bottom: 25%;
+            
+                &:nth-child(1) i {
+                    padding: 10px 9px;
+                }
+                &:nth-child(2) i {
+                    padding: 10px 9px;
+                }
+                &:nth-child(3) i {
+                    padding: 8px 10px;
+                }
+                &:nth-child(4) i {
+                    padding: 10px 8px;
+                }
+                &:nth-child(5) i {
+                    padding: 10px 13px;
+                }
+                &:nth-child(6) i {
+                    padding: 10px 10px;
+                    margin-top: 220px;
+                }
+            }
+        
+            a {
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            
+                i {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // padding: 10px 0;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    width: 40px;
+                    aspect-ratio: 1/1;
+                
+                    &:hover {
+                        background-color: blue;
+                    }
+                }
+            
+                p {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    main {
+        width:95%;
+        height: 150vh;
+        background-color: #EAEDFF;
+        padding-top: 17px;
+        padding-right: 25px;
+
+        nav {
+            width: 100%;
+            height: 5vh;
+            // background-color: azure;
+            border-left: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+
+            menu {
+                display: flex;
+                gap: 30px;
+                padding-left: 25px;
+
+                a {
+                    text-decoration: none;
+                    color: gray;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    
+                    &:hover {
+                        color: black;
+                    }
+                }
+            }
+
+            .profile {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 30px;
+
+                a {
+                    text-decoration: none;
+                    
+                    button {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 10px;
+                        background-color: blue;
+                        border: none;
+                        border-radius: 10px;
+                        padding: 2vh 4vh;
+                        cursor: pointer;
+                        
+                        p {
+                            font-family: 'Poppins', sans-serif;
+                            color: white;
+                        }
+                    }
+                }
+
+                i {
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+
+                img {
+                    width: 35px;
+                    border-radius: 50%;
+                    padding: 1px 0;
+                    border: 1px solid gray;
+                    margin-right: 30px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .content {
+            width: 100%;
+            height: 135vh;
+            border-radius: 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 30px 40px;
+
+            .content-top {
+                width: 100%;
+                height: 43%;
+                // background-color: #FC951C;
+                display: flex;
+                justify-content: space-between;
+
+                .main-content {
+                    width: 69%;
+                    height: 100%;
+                    background-color: #F3D661;
+                    border-radius: 30px;
+                }
+                
+                .graphic {
+                    width: 28%;
+                    height: 100%;
+                    background-color: #C6E8D5;
+                    border-radius: 30px;
+                }
+            }
+            .content-bottom {
+                width: 100%;
+                height: 48%;
+                background-color: #FC951C;
+            }
+        }
+    }
+}

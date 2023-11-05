@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Sedgwick+Ave+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+section aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5%;
+  height: 101vh;
+  background-color: #EAEDFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  overflow: auto;
+}
+section aside .title {
+  margin-bottom: 35px;
+}
+section aside .title span {
+  font-family: "Outfit", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+}
+section aside .title span:nth-child(1) {
+  position: relative;
+  left: 6px;
+  color: #FC951C;
+}
+section aside .title span:nth-child(2) {
+  position: relative;
+  right: 6px;
+  color: black;
+}
+section aside ul {
+  list-style: none;
+}
+section aside ul li {
+  margin-bottom: 25%;
+}
+section aside ul li:nth-child(1) i {
+  padding: 10px 9px;
+}
+section aside ul li:nth-child(2) i {
+  padding: 10px 9px;
+}
+section aside ul li:nth-child(3) i {
+  padding: 8px 10px;
+}
+section aside ul li:nth-child(4) i {
+  padding: 10px 8px;
+}
+section aside ul li:nth-child(5) i {
+  padding: 10px 13px;
+}
+section aside ul li:nth-child(6) i {
+  padding: 10px 10px;
+  margin-top: 220px;
+}
+section aside ul a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section aside ul a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 40px;
+  aspect-ratio: 1/1;
+}
+section aside ul a i:hover {
+  background-color: blue;
+}
+section aside ul a p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+}
+section main {
+  width: 95%;
+  height: 150vh;
+  background-color: #EAEDFF;
+  padding-top: 17px;
+  padding-right: 25px;
+}
+section main nav {
+  width: 100%;
+  height: 5vh;
+  border-left: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+section main nav menu {
+  display: flex;
+  gap: 30px;
+  padding-left: 25px;
+}
+section main nav menu a {
+  text-decoration: none;
+  color: gray;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+section main nav menu a:hover {
+  color: black;
+}
+section main nav .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+section main nav .profile a {
+  text-decoration: none;
+}
+section main nav .profile a button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  padding: 2vh 4vh;
+  cursor: pointer;
+}
+section main nav .profile a button p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+section main nav .profile i {
+  font-size: 20px;
+  cursor: pointer;
+}
+section main nav .profile img {
+  width: 35px;
+  border-radius: 50%;
+  padding: 1px 0;
+  border: 1px solid gray;
+  margin-right: 30px;
+  cursor: pointer;
+}
+section main .content {
+  width: 100%;
+  height: 135vh;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 40px;
+}
+section main .content .content-top {
+  width: 100%;
+  height: 43%;
+  display: flex;
+  justify-content: space-between;
+}
+section main .content .content-top .main-content {
+  width: 69%;
+  height: 100%;
+  background-color: #F3D661;
+  border-radius: 30px;
+}
+section main .content .content-top .graphic {
+  width: 28%;
+  height: 100%;
+  background-color: #C6E8D5;
+  border-radius: 30px;
+}
+section main .content .content-bottom {
+  width: 100%;
+  height: 48%;
+  background-color: #FC951C;
+}
+
+/*# sourceMappingURL=main.css.map */
