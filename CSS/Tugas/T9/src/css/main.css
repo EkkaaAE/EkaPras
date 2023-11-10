@@ -24,7 +24,7 @@ section aside {
   overflow: auto;
 }
 section aside .title {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 section aside .title span {
   font-family: "Outfit", sans-serif;
@@ -77,6 +77,7 @@ section aside ul a i {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 0;
   border-radius: 50%;
   font-size: 20px;
   width: 40px;
@@ -157,7 +158,7 @@ section main nav .profile img {
   margin-right: 30px;
   cursor: pointer;
 }
-section main .content {
+section main .content-main {
   width: 100%;
   height: 135vh;
   border-radius: 20px;
@@ -167,28 +168,613 @@ section main .content {
   justify-content: space-between;
   padding: 30px 40px;
 }
-section main .content .content-top {
+section main .content-main .content-top {
   width: 100%;
   height: 43%;
   display: flex;
   justify-content: space-between;
 }
-section main .content .content-top .main-content {
+section main .content-main .content-top .main-content {
   width: 69%;
   height: 100%;
   background-color: #F3D661;
   border-radius: 30px;
+  display: flex;
+  flex-direction: row;
 }
-section main .content .content-top .graphic {
+section main .content-main .content-top .main-content .left {
+  width: 50%;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+section main .content-main .content-top .main-content .left .title {
+  width: 100%;
+  height: 30%;
+  padding: 60px 0 0 50px;
+}
+section main .content-main .content-top .main-content .left .title h2 {
+  font-weight: 900;
+  font-size: 40px;
+}
+section main .content-main .content-top .main-content .left .tablePrice {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price {
+  width: 60%;
+  height: 70%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price p:nth-child(2) {
+  margin-bottom: 10px;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price p:nth-child(2) span {
+  font-weight: 500;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price p:nth-child(2) span:nth-child(1) {
+  color: pink;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price p:nth-child(2) span:nth-child(2) {
+  color: black;
+  text-decoration: 2px line-through;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price .color {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price .color button {
+  color: blue;
+  padding: 8px 20px;
+  border-radius: 5vh;
+  background-color: #c9e0fc;
+  border: none;
+  cursor: pointer;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price .color .colors ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap: 5px;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price .color .colors ul li {
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price .color .colors ul li:hover {
+  margin-bottom: 3px;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price .color .colors ul li:nth-child(1) {
+  background-color: black;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price .color .colors ul li:nth-child(2) {
+  background-color: red;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price .color .colors ul li:nth-child(3) {
+  background-color: orange;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price .color .colors ul li:nth-child(4) {
+  background-color: yellow;
+}
+section main .content-main .content-top .main-content .left .tablePrice .price .color .colors ul li:nth-child(5) {
+  background-color: green;
+}
+section main .content-main .content-top .main-content .left .tableBanner {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: flex-end;
+}
+section main .content-main .content-top .main-content .left .tableBanner .banner {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+section main .content-main .content-top .main-content .left .tableBanner .banner span {
+  font-weight: 600;
+  color: white;
+}
+section main .content-main .content-top .main-content .left .tableBanner .banner span:nth-child(1) {
+  background-color: #027AFE;
+  border-radius: 0 5vh 0 0;
+  padding: 10px 20px 10px 45px;
+  position: absolute;
+  left: 40px;
+}
+section main .content-main .content-top .main-content .left .tableBanner .banner span:nth-child(2) {
+  background-color: #E66300;
+  border-radius: 0 5vh 0 30px;
+  padding: 10px 20px;
+  position: absolute;
+  left: 0px;
+}
+section main .content-main .content-top .main-content .right {
+  width: 50%;
+  height: 100%;
+}
+section main .content-main .content-top .main-content .right .shoes {
+  width: 100%;
+  height: 70%;
+}
+section main .content-main .content-top .main-content .right .shoes .box-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section main .content-main .content-top .main-content .right .shoes .box-img img {
+  width: 580px;
+  transform: rotate(-30deg);
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+section main .content-main .content-top .main-content .right .sold {
+  width: 100%;
+  height: 30%;
+}
+section main .content-main .content-top .main-content .right .sold .boxSold {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+section main .content-main .content-top .main-content .right .sold .boxSold h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  transform: rotate(-30deg);
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+section main .content-main .content-top .graphic {
   width: 28%;
   height: 100%;
   background-color: #C6E8D5;
-  border-radius: 30px;
+  border-radius: 15px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: row;
 }
-section main .content .content-bottom {
+section main .content-main .content-top .graphic .left {
+  width: 5%;
+  height: 100%;
+}
+section main .content-main .content-top .graphic .left .box {
+  width: 100%;
+  height: 10%;
+  background-color: purple;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  margin-top: 5px;
+}
+section main .content-main .content-top .graphic .left ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+section main .content-main .content-top .graphic .right {
+  width: 95%;
+  height: 100%;
+}
+section main .content-main .content-top .graphic .right header {
+  width: 100%;
+  height: 11%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+section main .content-main .content-top .graphic .right header p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+section main .content-main .content-top .graphic .right header select {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+section main .content-main .content-top .graphic .right .box-candle {
+  width: 100%;
+  height: 89%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 30px;
+  gap: 7%;
+}
+section main .content-main .content-top .graphic .right .box-candle .candle {
+  width: 7%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+section main .content-main .content-top .graphic .right .box-candle .candle p {
+  margin-top: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+section main .content-main .content-top .graphic .right .box-candle .candle .candle-1 {
+  width: 100%;
+  height: 75%;
+  background-color: #E66300;
+  border-radius: 5px;
+}
+section main .content-main .content-top .graphic .right .box-candle .candle .candle-2 {
+  width: 100%;
+  height: 60%;
+  background-color: #F3D661;
+  border-radius: 5px;
+}
+section main .content-main .content-top .graphic .right .box-candle .candle .candle-3 {
+  width: 100%;
+  height: 100%;
+  background-color: #027AFE;
+  border-radius: 5px;
+}
+section main .content-main .content-top .graphic .right .box-candle .candle .candle-4 {
+  width: 100%;
+  height: 50%;
+  background-color: #F3D661;
+  border-radius: 5px;
+}
+section main .content-main .content-top .graphic .right .box-candle .candle .candle-5 {
+  width: 100%;
+  height: 70%;
+  background-color: #027AFE;
+  border-radius: 5px;
+}
+section main .content-main .content-top .graphic .right .box-candle .candle .candle-6 {
+  width: 100%;
+  height: 30%;
+  background-color: #E66300;
+  border-radius: 5px;
+}
+section main .content-main .content-top .graphic .right .box-candle .candle .candle-7 {
+  width: 100%;
+  height: 40%;
+  background-color: #027AFE;
+  border-radius: 5px;
+}
+section main .content-main .content-bottom {
   width: 100%;
   height: 48%;
-  background-color: #FC951C;
+  display: flex;
+  flex-direction: row;
+}
+section main .content-main .content-bottom .box-content {
+  width: 74%;
+  height: 100%;
+}
+section main .content-main .content-bottom .box-content header {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section main .content-main .content-bottom .box-content header .title {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+section main .content-main .content-bottom .box-content header .title p {
+  margin-left: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+section main .content-main .content-bottom .box-content header .title p::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 35px;
+  background-color: #B0E0C6;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+section main .content-main .content-bottom .box-content header .bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+section main .content-main .content-bottom .box-content header .bar select {
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+section main .content-main .content-bottom .box-content header .bar button {
+  padding: 10px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background-color: #027AFE;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+section main .content-main .content-bottom .box-content .content {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+}
+section main .content-main .content-bottom .box-content .content .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section main .content-main .content-bottom .box-content .content .card .box-img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+section main .content-main .content-bottom .box-content .content .card .box-img img {
+  width: 90%;
+  rotate: -20deg;
+  position: absolute;
+  left: 0;
+}
+section main .content-main .content-bottom .box-content .content .card .description {
+  display: flex;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+section main .content-main .content-bottom .box-content .content .card .description p:nth-child(1) {
+  font-size: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+section main .content-main .content-bottom .box-content .content .card .description p:nth-child(2) {
+  font-size: 15px;
+}
+section main .content-main .content-bottom .box-content .content .card .description p:nth-child(2) span {
+  color: pink;
+}
+section main .content-main .content-bottom .box-content .content .card .description p:nth-child(2) span:nth-child(2) {
+  color: black;
+  text-decoration: 2px line-through;
+  margin-left: 10px;
+}
+section main .content-main .content-bottom .box-content .content .card .description .colors {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section main .content-main .content-bottom .box-content .content .card .description .colors button {
+  padding: 8px 16px;
+  border-radius: 5vh;
+  border: none;
+  background-color: #027AFE;
+  cursor: pointer;
+}
+section main .content-main .content-bottom .box-content .content .card .description .colors ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+section main .content-main .content-bottom .box-content .content .card .description .colors ul li {
+  width: 15px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+section main .content-main .content-bottom .box-content .content .card .description .colors ul li:nth-child(1) {
+  background-color: black;
+}
+section main .content-main .content-bottom .box-content .content .card .description .colors ul li:nth-child(2) {
+  background-color: red;
+}
+section main .content-main .content-bottom .box-content .content .card .description .colors ul li:nth-child(3) {
+  background-color: orange;
+}
+section main .content-main .content-bottom .box-content .content .card .description .colors ul li:nth-child(4) {
+  background-color: yellow;
+}
+section main .content-main .content-bottom .box-content .content .card-1 .box-img {
+  background-color: #CFD3DC;
+}
+section main .content-main .content-bottom .box-content .content .card-2 .box-img {
+  background-color: #E1E3E7;
+}
+section main .content-main .content-bottom .box-content .content .card-2 .box-img .new {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 15px;
+  background-color: #E66300;
+  border-radius: 30px 0 30px 0;
+}
+section main .content-main .content-bottom .box-content .content .card-3 .box-img {
+  background-color: #D6D6D6;
+}
+section main .content-main .content-bottom .box-content .content .card-3 .box-img .new {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 15px;
+  background-color: #E66300;
+  border-radius: 30px 0 30px 0;
+  z-index: 1;
+}
+section main .content-main .content-bottom .box-content .content .card-3 .box-img .hot {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  padding: 8px 15px 8px 45px;
+  background-color: #027AFE;
+  border-radius: 0 0 30px 0;
+}
+section main .content-main .content-bottom .box-content .content .card-4 .box-img {
+  background-color: #DADAD5;
+}
+section main .content-main .content-bottom .box-content .content .card-4 .box-img .hot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 15px;
+  background-color: #027AFE;
+  border-radius: 30px 0 30px 0;
+  z-index: 1;
+}
+section main .content-main .content-bottom .data {
+  width: 26%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section main .content-main .content-bottom .data .data-1 {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Poppins", sans-serif;
+}
+section main .content-main .content-bottom .data .data-1 i.fa-user {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #B0E0C6;
+  width: 45px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+section main .content-main .content-bottom .data .data-1 p:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+section main .content-main .content-bottom .data .data-1 p:nth-child(2) .fa-exclamation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  width: 13px;
+  height: 13px;
+  background-color: gray;
+  border-radius: 50%;
+}
+section main .content-main .content-bottom .data .data-1 p:nth-child(3) {
+  font-size: 50px;
+  font-weight: 600;
+}
+section main .content-main .content-bottom .data .data-1 p:nth-child(4) {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+section main .content-main .content-bottom .data .data-1 p:nth-child(4) i.fa-arrow-up {
+  font-size: 20px;
+}
+section main .content-main .content-bottom .data .data-1 p:nth-child(4) span {
+  color: #C6E8D5;
+}
+section main .content-main .content-bottom .data .data-2 {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Poppins", sans-serif;
+}
+section main .content-main .content-bottom .data .data-2 i.fa-arrow-right-arrow-left {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #CDC2FB;
+  width: 45px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+section main .content-main .content-bottom .data .data-2 p:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+section main .content-main .content-bottom .data .data-2 p:nth-child(2) .fa-exclamation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  width: 13px;
+  height: 13px;
+  background-color: gray;
+  border-radius: 50%;
+}
+section main .content-main .content-bottom .data .data-2 p:nth-child(3) {
+  font-size: 50px;
+  font-weight: 600;
+}
+section main .content-main .content-bottom .data .data-2 p:nth-child(4) {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+section main .content-main .content-bottom .data .data-2 p:nth-child(4) i.fa-arrow-up {
+  font-size: 20px;
+}
+section main .content-main .content-bottom .data .data-2 p:nth-child(4) span {
+  color: #C6E8D5;
 }
 
 /*# sourceMappingURL=main.css.map */
