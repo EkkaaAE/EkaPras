@@ -1,0 +1,4 @@
+$PROFILE
+Test-Path $PROFILE
+New-Item -Type file -Path $PROFILE -Force
+notepad $PROFILE

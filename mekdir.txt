@@ -1,0 +1,12 @@
+New-Item index.html
+mkdir ./template
+mkdir ./src/sass
+mkdir ./src/css
+mkdir ./src/js
+New-Item ./src/sass/main.scss
+New-Item ./src/css/main.css
+New-Item ./src/js/app.js
+mkdir ./public/assets/image
+mkdir ./public/assets/video
+mkdir ./public/assets/audio
+pnpm init

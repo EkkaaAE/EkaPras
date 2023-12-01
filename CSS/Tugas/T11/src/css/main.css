@@ -1,0 +1,707 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Red+Hat+Display:wght@500&family=Satisfy&family=Sedgwick+Ave+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .container {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+* nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 100px;
+}
+* nav .logo a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+* nav .logo a img {
+  width: 25px;
+  aspect-ratio: 1/1;
+  border-radius: 35%;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+* nav .logo a span {
+  color: black;
+}
+* nav .logo a span:nth-child(3) {
+  font-size: 13px;
+  font-style: italic;
+  padding-top: 3px;
+}
+* nav ul#nav1 {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  list-style: none;
+}
+* nav ul#nav1 a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+}
+* nav ul#nav1 a:hover {
+  font-weight: 500;
+}
+* nav ul#nav1 a li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 35px;
+  border-radius: 7px;
+  background-color: #F8F8F9;
+}
+* nav div#nav2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+* nav div#nav2 i {
+  font-size: 15px;
+}
+* nav div#nav2 select {
+  font-family: "Poppins", sans-serif;
+  padding-right: 10px;
+  margin-right: 25px;
+  border: none;
+}
+* nav div#nav2 div#box-sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px 0px rgb(0, 0, 0);
+}
+* nav div#nav2 div#box-sign-up button {
+  font-family: "Poppins", sans-serif;
+  padding: 5px 15px;
+  background-color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+* nav div#nav2 div#box-sign-up button:hover {
+  border: 1px solid black;
+  position: relative;
+  bottom: 4px;
+  right: 4px;
+}
+* main#title {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  margin: 0 100px;
+  position: relative;
+}
+* main#title img.background {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+* main#title .title {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+}
+* main#title .description {
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+* main#title .button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+* main#title .button .box-button {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+* main#title .button .box-button button {
+  padding: 10px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+* main#title .button .box-button-1 {
+  background-color: white;
+}
+* main#title .button .box-button-1 button {
+  background-color: black;
+  border: 1px solid transparent;
+  color: white;
+}
+* main#title .button .box-button-1 button:hover {
+  border: 1px solid black;
+  position: relative;
+  bottom: 4px;
+  right: 4px;
+}
+* main#title .button .box-button-2 {
+  background-color: black;
+  box-shadow: 3px 3px 3px 0px rgb(0, 0, 0);
+}
+* main#title .button .box-button-2 button {
+  background-color: white;
+  border: 1px solid transparent;
+  color: black;
+}
+* main#title .button .box-button-2 button:hover {
+  border: 1px solid black;
+  position: relative;
+  bottom: 4px;
+  right: 4px;
+}
+* .logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 100px;
+  margin: 50px 0;
+}
+* .logos img {
+  height: 35px;
+}
+* .box-services {
+  width: 100%;
+  background-color: transparent;
+  padding: 0 100px;
+}
+* .box-services .services {
+  width: 100%;
+  background-color: black;
+  padding: 30px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+* .box-services .services .header {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+* .box-services .services .title {
+  color: white;
+  font-size: 50px;
+}
+* .box-services .services .description {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+* .box-services .services .box-card {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
+}
+* .box-services .services .box-card .card {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 30px;
+}
+* .box-services .services .box-card .card img {
+  width: 40px;
+  aspect-ratio: 1/1;
+}
+* .box-services .services .box-card .card p#title {
+  font-size: 25px;
+  font-weight: 500;
+}
+* .box-services .services .box-card .card p#description {
+  font-size: 15px;
+}
+* .helping {
+  width: 100%;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+* .helping img {
+  width: 45%;
+  aspect-ratio: 1/1;
+}
+* .helping .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-right: 100px;
+  gap: 20px;
+}
+* .helping .content .title {
+  font-size: 35px;
+  font-weight: 600;
+}
+* .helping .content .description {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+* .helping .content .button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+* .helping .content .button .box-button {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+* .helping .content .button .box-button button {
+  padding: 10px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+* .helping .content .button .box-button-1 {
+  background-color: white;
+}
+* .helping .content .button .box-button-1 button {
+  background-color: black;
+  border: 1px solid transparent;
+  color: white;
+}
+* .helping .content .button .box-button-1 button:hover {
+  border: 1px solid black;
+  position: relative;
+  bottom: 4px;
+  right: 4px;
+}
+* .helping .content .button .box-button-2 {
+  background-color: black;
+  box-shadow: 3px 3px 3px 0px rgb(0, 0, 0);
+}
+* .helping .content .button .box-button-2 button {
+  background-color: white;
+  border: 1px solid transparent;
+  color: black;
+}
+* .helping .content .button .box-button-2 button:hover {
+  border: 1px solid black;
+  position: relative;
+  bottom: 4px;
+  right: 4px;
+}
+* .packages {
+  width: 100%;
+  padding: 50px 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+* .packages .header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 8px;
+}
+* .packages p {
+  font-size: 11px;
+}
+* .packages .box-prices {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+* .packages .box-prices #prices {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+* .packages .box-prices #prices .title {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+* .packages .box-prices #prices .title .logo a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+* .packages .box-prices #prices .title .logo a img {
+  width: 25px;
+  aspect-ratio: 1/1;
+  border-radius: 35%;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+* .packages .box-prices #prices .title .logo a span {
+  color: black;
+}
+* .packages .box-prices #prices .title .logo a span:nth-child(3) {
+  font-size: 13px;
+  font-style: italic;
+  padding-top: 3px;
+}
+* .packages .box-prices #prices .title h1 {
+  font-size: 35px;
+}
+* .packages .box-prices #prices .prices {
+  width: 17.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+* .packages .box-prices #prices .prices p {
+  font-size: 25px;
+  font-weight: 600;
+}
+* .packages .box-prices #prices .prices p:nth-child(2) span#month {
+  font-size: 15px;
+  font-weight: 500;
+}
+* .packages .box-prices #prices .standard {
+  border: 5px solid black;
+  border-radius: 2vh 2vh 0 0;
+  background-color: black;
+  color: white;
+}
+* .packages .box-prices .box-value {
+  width: 100%;
+  border: 5px solid black;
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+* .packages .box-prices .box-value .value {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+* .packages .box-prices .box-value .value p#value {
+  font-size: 15px;
+  width: 30%;
+  padding: 20px 20px;
+  background-color: black;
+  color: white;
+}
+* .packages .box-prices .box-value .value .checkbox {
+  width: 17.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+* .packages .box-prices .box-value .value .checkbox i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+* .packages .box-prices .box-value .value .checkbox i {
+  background-color: black;
+  color: white;
+}
+* .packages .box-prices .box-value .value .checkbox i.fa-xmark {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+* .packages .box-prices .box-value .value .standard {
+  background-color: black;
+}
+* .packages .box-prices .box-value .value .standard i {
+  background-color: white;
+  color: black;
+}
+* .packages .box-prices .box-value .value3 {
+  background-color: white;
+}
+* .packages .box-prices .box-value .value3 p#value {
+  padding-left: 60px;
+  background-color: white;
+  color: black;
+}
+* .packages .box-prices .box-value .value3 .checkbox {
+  border: none;
+  background-color: white;
+}
+* .packages .box-prices .box-value .value3 .checkbox i {
+  background-color: black;
+  color: white;
+}
+* .packages .box-prices .footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+* .packages .box-prices .footer .box {
+  width: 17.5%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 20px;
+}
+* .packages .box-prices .footer .box1 {
+  width: 30%;
+}
+* .packages .box-prices .footer .box4 {
+  background-color: black;
+  border-radius: 0 0 2vh 2vh;
+  padding-bottom: 10px;
+  border-left: 5px solid black;
+}
+* .packages .box-prices .footer .box4 .button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+* .packages .box-prices .footer .box4 .button .box-button {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+* .packages .box-prices .footer .box4 .button .box-button button {
+  padding: 10px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+* .packages .box-prices .footer .box4 .button .box-button-1 {
+  background-color: transparent;
+  border: 1px solid white;
+}
+* .packages .box-prices .footer .box4 .button .box-button-1 button {
+  background-color: white;
+  border: 1px solid transparent;
+  color: black;
+}
+* .packages .box-prices .footer .box4 .button .box-button-1 button:hover {
+  border: 1px solid white;
+  position: relative;
+  bottom: 4px;
+  right: 4px;
+}
+* .faq {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 100px;
+}
+* .faq .box-left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+* .faq .box-left .box-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+* .faq .box-left .box-search .search {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+* .faq .box-left .box-search .search i {
+  font-size: 20px;
+}
+* .faq .box-left .box-search .search input {
+  display: flex;
+  padding: 5px 10px;
+  border: none;
+}
+* .faq .box-left .box-search i#search {
+  height: 48px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+* .faq .box-left button {
+  display: flex;
+  gap: 20px;
+  padding: 15px 20px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  font-size: 15px;
+}
+* .faq .box-left button i {
+  rotate: 45deg;
+}
+* .faq .box-right {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  display: flex;
+  gap: 10px;
+}
+* .faq .box-right .box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 25px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+* .faq .box-right .box .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+* .faq .box-right .box .title h4 {
+  font-size: 20px;
+}
+* .faq .box-right .box .title i {
+  color: black;
+}
+* .box-newsletter {
+  width: 100%;
+  padding: 0 100px;
+  margin-top: 100px;
+}
+* .box-newsletter .newsletter {
+  background-color: black;
+  border-radius: 2vh;
+  padding: 50px 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 20px;
+}
+* .box-newsletter .newsletter h4 {
+  letter-spacing: 5px;
+}
+* .box-newsletter .newsletter p {
+  text-align: center;
+}
+* .box-newsletter .newsletter .input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid white;
+  gap: 10px;
+  margin-top: 50px;
+}
+* .box-newsletter .newsletter .input input {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 5px 200px 5px 0;
+}
+* .box-newsletter .newsletter .input i {
+  color: white;
+}
+* .about {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-top: 50px;
+}
+* .about .box {
+  display: flex;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+* .about .box .logo a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+* .about .box .logo a img {
+  width: 25px;
+  aspect-ratio: 1/1;
+  border-radius: 35%;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+* .about .box .logo a span {
+  color: black;
+}
+* .about .box .logo a span:nth-child(3) {
+  font-size: 13px;
+  font-style: italic;
+  padding-top: 3px;
+}
+* .about .box .logo-sosmed {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+* .about .box .logo-sosmed i {
+  font-size: 25px;
+  aspect-ratio: 1/1;
+}
+* .copykanan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid black;
+  padding: 10px;
+}
+* .copykanan span {
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */
