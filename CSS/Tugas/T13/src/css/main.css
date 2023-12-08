@@ -204,14 +204,14 @@ body {
   }
 }
 .container section#profile .box-left {
-  width: 80%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 .container section#profile .box-left div#title {
-  font-size: 50px;
+  font-size: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -285,7 +285,7 @@ body {
   }
 }
 .container section#profile .box-right {
-  width: 20%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -299,12 +299,17 @@ body {
 }
 .container section#profile .box-right button {
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 10px;
   padding: 2.5px 10px;
   border: none;
   border-radius: 50vh;
   background-color: #9DAAA9;
   color: white;
+}
+@media screen and (min-width: 1024px) {
+  .container section#profile .box-right button {
+    font-size: 15px;
+  }
 }
 .container section#keyword {
   display: flex;
@@ -442,6 +447,9 @@ body {
 .container section#footer .copykanan p {
   display: flex;
   gap: 50px;
+}
+.container section#footer .copykanan span.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */

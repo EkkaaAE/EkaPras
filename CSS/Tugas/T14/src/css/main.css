@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Onest:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 2vh 5vh;
+  background-color: #101322;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+nav #title {
+  width: 130px;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+nav .title {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #85C7D3;
+  border: none;
+  border-radius: 2vh 2vh 0 0;
+  position: relative;
+}
+nav .title::before {
+  content: "";
+  width: 15px;
+  aspect-ratio: 1;
+  background-color: #85C7D3;
+  position: absolute;
+  bottom: 0;
+  right: -14px;
+}
+nav .title .box {
+  padding: 3px 10px;
+  border: 8px solid #101322;
+  border-radius: 50vh;
+}
+nav .hidden {
+  width: 30px;
+  aspect-ratio: 1;
+  background-color: #101322;
+  z-index: 1;
+  border-radius: 50%;
+}
+nav #navigasi {
+  height: 7vh;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  position: relative;
+  background-color: #101322;
+  border-radius: 2vh;
+  padding-right: 4vh;
+}
+@media screen and (min-width: 1025px) {
+  nav #navigasi {
+    display: flex;
+  }
+}
+nav #navigasi .navigasi {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+nav #navigasi .navigasi button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 15px;
+}
+nav #navigasi .navigasi button:hover {
+  background-color: white;
+  color: black;
+}
+nav #navigasi button {
+  padding: 5px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  border: 2px solid transparents;
+  border-radius: 50vh;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+nav #navigasi button#login:hover {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  position: relative;
+}
+@media screen and (min-width: 1025px) {
+  nav #menu {
+    display: none;
+  }
+}
+nav #menu button {
+  display: flex;
+  padding: 5px 25px;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  border: 2px solid transparents;
+  border-radius: 50vh;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+nav #menu button#menu:hover {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  position: relative;
+}
+
+section#main-content {
+  width: 100%;
+  background-color: #85C7D3;
+  border-radius: 0 4vh 4vh 4vh;
+  padding: 10vh 5vh 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+section#main-content #description-content {
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+}
+@media screen and (min-width: 1025px) {
+  section#main-content #description-content {
+    width: 50%;
+  }
+}
+section#main-content #description-content h1 {
+  font-size: 40px;
+  word-spacing: 5px;
+  line-height: 1.3;
+  margin-left: 5px;
+}
+@media screen and (min-width: 780px) {
+  section#main-content #description-content h1 {
+    font-size: 70px;
+  }
+}
+section#main-content #description-content p {
+  width: 80%;
+}
+@media screen and (min-width: 640px) {
+  section#main-content #description-content p {
+    width: 50%;
+  }
+}
+section#main-content #description-content .button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5px;
+}
+section#main-content #description-content .button button {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  width: 110px;
+  height: 35px;
+  border: 2px solid transparent;
+  border-radius: 50vh;
+  background-color: black;
+  color: white;
+}
+section#main-content #description-content .button button:hover {
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+}
+section#main-content #description-content .button i {
+  height: 35px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  rotate: 45deg;
+  cursor: pointer;
+}
+section#main-content #description-content .button i:hover {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+section#main-content .image {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  section#main-content .image {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+  }
+}
+section#main-content img.women-vr {
+  width: 80%;
+}
+@media screen and (min-width: 1025px) {
+  section#main-content img.women-vr {
+    width: 90vh;
+  }
+}
+
+section#box-card {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (min-width: 780px) {
+  section#box-card {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+section#box-card .card {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  border-radius: 4vh;
+}
+@media screen and (min-width: 780px) {
+  section#box-card .card {
+    width: 33%;
+  }
+}
+section#box-card .card-1 {
+  background-color: #D9BDA8;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+section#box-card .card-1 img {
+  width: auto;
+  height: 90%;
+}
+@media screen and (min-width: 1280px) {
+  section#box-card .card-1 img {
+    width: auto;
+    height: 90%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  section#box-card .card-1 img {
+    width: auto;
+    height: 90%;
+  }
+}
+@media screen and (min-width: 780px) {
+  section#box-card .card-1 img {
+    width: auto;
+    height: 90%;
+  }
+}
+section#box-card .card-1 i {
+  height: 35px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  rotate: 45deg;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+section#box-card .card-1 i:hover {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+section#box-card .card-2 {
+  background-color: #DAB7CB;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 28px;
+}
+section#box-card .card-2 .header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section#box-card .card-2 .header .box {
+  padding: 3px 10px;
+  border: 8px solid #101322;
+  border-radius: 50vh;
+}
+section#box-card .card-2 .header .box-point {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+section#box-card .card-2 .header .box-point .point {
+  width: 13px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #101322;
+}
+section#box-card .card-2 .description {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+section#box-card .card-2 .button {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5px;
+}
+section#box-card .card-2 .button button {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  width: 110px;
+  height: 35px;
+  border: 2px solid black;
+  border-radius: 50vh;
+  background-color: transparent;
+  color: black;
+}
+section#box-card .card-2 .button button:hover {
+  color: white;
+  background-color: black;
+}
+section#box-card .card-2 .button i {
+  height: 35px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  rotate: 45deg;
+  cursor: pointer;
+}
+section#box-card .card-2 .button i:hover {
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+}
+section#box-card .card-2 .users {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+section#box-card .card-2 .users .box-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section#box-card .card-2 .users .box-profile .profile {
+  width: 45px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid white;
+}
+section#box-card .card-2 .users .box-profile .profile-2 {
+  position: relative;
+  left: -10px;
+}
+section#box-card .card-2 .users .box-profile .profile-3 {
+  position: relative;
+  left: -20px;
+}
+section#box-card .card-2 .users .people {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section#box-card .card-2 .users .people p#number {
+  font-size: 30px;
+  font-weight: 600;
+}
+section#box-card .card-3 {
+  background-color: #B6BEFC;
+  border: 2px solid #B6BEFC;
+  display: flex;
+  flex-direction: column;
+}
+section#box-card .card-3 .header {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+}
+section#box-card .card-3 .header .menu {
+  height: 100%;
+  aspect-ratio: 1;
+  background-color: black;
+  border-radius: 4vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+section#box-card .card-3 .header .menu i {
+  color: white;
+  font-size: 25px;
+}
+section#box-card .card-3 .header .menu::after {
+  content: "";
+  width: 40px;
+  aspect-ratio: 1;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: -39px;
+}
+section#box-card .card-3 .header .menu::before {
+  content: "";
+  width: 40px;
+  aspect-ratio: 1;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: -39px;
+}
+section#box-card .card-3 .header .title {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: #B6BEFC;
+  border-radius: 4vh 4vh 0 0;
+  z-index: 1;
+  padding-right: 25px;
+}
+section#box-card .card-3 .header .title p {
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+section#box-card .card-3 .main {
+  width: 100%;
+  height: 75%;
+  background-color: #B6BEFC;
+  border-radius: 4vh 0 4vh 4vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+  gap: 10px;
+}
+section#box-card .card-3 .main .button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+section#box-card .card-3 .main .button button#trasparant {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px;
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 50vh;
+  background-color: transparent;
+  color: black;
+}
+section#box-card .card-3 .main .button button#black {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px;
+  height: 45px;
+  border: 2px solid transparent;
+  border-radius: 50vh;
+  background-color: black;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
