@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icon Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <!-- JS -->
+    <script src="./src/js/app.js"></script>
+    <title>Disorganized</title>
+</head>
+
+<body>
+    <div id="container" class="lg:h-[100vh]">
+        <div class="w-full flex flex-col lg:flex-row-reverse lg:justify-between lg:items-center lg:gap-10">
+            <!-- Header -->
+            <div id="profile" class="w-full lg:w-auto h-auto px-5 py-3 flex flex-row items-center justify-between">
+                <div class="lg:hidden">
+                    <h1 class="font-semibold text-xl leading-normal">Welcome back !</h1>
+                    <p class="leading-normal">Hi, EkssAE</p>
+                </div>
+                <div class="flex flex-row items-center gap-2">
+                    <i class="fa-regular fa-bell w-14 aspect-square text-2xl border-2 border-gray-100 rounded-full flex items-center justify-center"></i>
+                    <i class="fa-solid fa-cart-shopping w-14 aspect-square text-xl border-2 border-gray-100 rounded-full hidden lg:flex items-center justify-center"></i>
+                    <img src="./public/assets/image/profile.jpeg" class="w-14 p-1 aspect-square border-2 bordergray-100 rounded-full">
+                </div>
+            </div>
+            <!-- Search Bar -->
+            <div class="mt-2 w-full h-auto px-5 flex flex-row lg:flex-row-reverse items-center justify-between gap-2">
+                <div class="h-14 px-6 py-2 flex flex-row grow items-center justify-between bg-gray-100 rounded-xl">
+                    <input type="text" class="bg-transparent" placeholder="Brands, Product, ...">
+                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                </div>
+                <button class="material-symbols-outlined w-14 text-white aspect-square rounded-xl flex items-center justify-center bg-[#B9080D]">tune</button>
+            </div>
+        </div>
+        <!-- Popular Products -->
+        <div class="w-full px-5 mt-6 flex flex row justify-between">
+            <h3 class="text-xl font-bold">Popular Products</h3>
+            <a href="#" class="text-[#B9080D]">View all</a>
+        </div>
+        <!-- Card Joystick -->
+        <div class="w-full h-[49vh] pt-4 pb-10 flex flex-row overflow-x-scroll">
+            <!-- Card 1 -->
+            <div id="card" class="h-full aspect-[4/5] ml-5 p-5 pb-7 rounded-xl border border-gray-100 bg-white shadow-xl flex justify-center relative">
+                <div class="w-full h-full flex flex-col justify-between">
+                    <img src="./public/assets/image/1.png" class="w-full">
+                    <h1 class="text-lg font-semibold">Solar Red Joystick</h1>
+                    <div class="flex flex-row items-end justify-between">
+                        <div>
+                            <p class="text-lg">Accessories</p>
+                            <p class="text-sm"><span class="text-[#B9080D] font-bold text-xl">$233</span>/Pcs</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping w-12 text-xl text-white aspect-square bg-[#8A8482] flex items-center justify-center rounded-xl"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-x text-gray-200 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 left-10 flex items-center justify-center"></i>
+                <i class="fa-solid fa-star text-[#B9080D] text-[18px] w-10 aspect-square border-[5px] bg-white border-gray-100 rounded-full absolute -bottom-5 flex items-center justify-center"></i>
+                <i class="fa-solid fa-check text-gray-300 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 right-10 flex items-center justify-center"></i>
+            </div>
+            <!-- Card 2 -->
+            <div id="card" class="h-full aspect-[4/5] ml-5 p-5 pb-7 rounded-xl border border-gray-100 bg-white shadow-xl flex justify-center relative">
+                <div class="w-full h-full flex flex-col justify-between">
+                    <img src="./public/assets/image/2.png" class="w-full">
+                    <h1 class="text-lg font-semibold">Solar Red Joystick</h1>
+                    <div class="flex flex-row items-end justify-between">
+                        <div>
+                            <p class="text-lg">Accessories</p>
+                            <p class="text-sm"><span class="text-[#B9080D] font-bold text-xl">$233</span>/Pcs</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping w-12 text-xl text-white aspect-square bg-[#8A8482] flex items-center justify-center rounded-xl"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-x text-gray-200 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 left-10 flex items-center justify-center"></i>
+                <i class="fa-solid fa-star text-[#B9080D] text-[18px] w-10 aspect-square border-[5px] bg-white border-gray-100 rounded-full absolute -bottom-5 flex items-center justify-center"></i>
+                <i class="fa-solid fa-check text-gray-300 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 right-10 flex items-center justify-center"></i>
+            </div>
+            <!-- Card 3 -->
+            <div id="card" class="h-full aspect-[4/5] ml-5 p-5 pb-7 rounded-xl border border-gray-100 bg-white shadow-xl flex justify-center relative">
+                <div class="w-full h-full flex flex-col justify-between">
+                    <img src="./public/assets/image/3.png" class="w-full">
+                    <h1 class="text-lg font-semibold">Solar Red Joystick</h1>
+                    <div class="flex flex-row items-end justify-between">
+                        <div>
+                            <p class="text-lg">Accessories</p>
+                            <p class="text-sm"><span class="text-[#B9080D] font-bold text-xl">$233</span>/Pcs</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping w-12 text-xl text-white aspect-square bg-[#8A8482] flex items-center justify-center rounded-xl"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-x text-gray-200 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 left-10 flex items-center justify-center"></i>
+                <i class="fa-solid fa-star text-[#B9080D] text-[18px] w-10 aspect-square border-[5px] bg-white border-gray-100 rounded-full absolute -bottom-5 flex items-center justify-center"></i>
+                <i class="fa-solid fa-check text-gray-300 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 right-10 flex items-center justify-center"></i>
+            </div>
+            <!-- Card 4 -->
+            <div id="card" class="h-full aspect-[4/5] ml-5 p-5 pb-7 rounded-xl border border-gray-100 bg-white shadow-xl flex justify-center relative">
+                <div class="w-full h-full flex flex-col justify-between">
+                    <img src="./public/assets/image/4.png" class="w-full">
+                    <h1 class="text-lg font-semibold">Solar Red Joystick</h1>
+                    <div class="flex flex-row items-end justify-between">
+                        <div>
+                            <p class="text-lg">Accessories</p>
+                            <p class="text-sm"><span class="text-[#B9080D] font-bold text-xl">$233</span>/Pcs</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping w-12 text-xl text-white aspect-square bg-[#8A8482] flex items-center justify-center rounded-xl"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-x text-gray-200 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 left-10 flex items-center justify-center"></i>
+                <i class="fa-solid fa-star text-[#B9080D] text-[18px] w-10 aspect-square border-[5px] bg-white border-gray-100 rounded-full absolute -bottom-5 flex items-center justify-center"></i>
+                <i class="fa-solid fa-check text-gray-300 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 right-10 flex items-center justify-center"></i>
+            </div>
+            <!-- Card 5 -->
+            <div id="card" class="h-full aspect-[4/5] ml-5 p-5 pb-7 rounded-xl border border-gray-100 bg-white shadow-xl flex justify-center relative">
+                <div class="w-full h-full flex flex-col justify-between">
+                    <img src="./public/assets/image/5.png" class="w-full">
+                    <h1 class="text-lg font-semibold">Solar Red Joystick</h1>
+                    <div class="flex flex-row items-end justify-between">
+                        <div>
+                            <p class="text-lg">Accessories</p>
+                            <p class="text-sm"><span class="text-[#B9080D] font-bold text-xl">$233</span>/Pcs</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping w-12 text-xl text-white aspect-square bg-[#8A8482] flex items-center justify-center rounded-xl"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-x text-gray-200 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 left-10 flex items-center justify-center"></i>
+                <i class="fa-solid fa-star text-[#B9080D] text-[18px] w-10 aspect-square border-[5px] bg-white border-gray-100 rounded-full absolute -bottom-5 flex items-center justify-center"></i>
+                <i class="fa-solid fa-check text-gray-300 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 right-10 flex items-center justify-center"></i>
+            </div>
+            <!-- Card 6 -->
+            <div id="card" class="h-full aspect-[4/5] ml-5 p-5 pb-7 rounded-xl border border-gray-100 bg-white shadow-xl flex justify-center relative">
+                <div class="w-full h-full flex flex-col justify-between">
+                    <img src="./public/assets/image/6.png" class="w-full">
+                    <h1 class="text-lg font-semibold">Solar Red Joystick</h1>
+                    <div class="flex flex-row items-end justify-between">
+                        <div>
+                            <p class="text-lg">Accessories</p>
+                            <p class="text-sm"><span class="text-[#B9080D] font-bold text-xl">$233</span>/Pcs</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping w-12 text-xl text-white aspect-square bg-[#8A8482] flex items-center justify-center rounded-xl"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-x text-gray-200 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 left-10 flex items-center justify-center"></i>
+                <i class="fa-solid fa-star text-[#B9080D] text-[18px] w-10 aspect-square border-[5px] bg-white border-gray-100 rounded-full absolute -bottom-5 flex items-center justify-center"></i>
+                <i class="fa-solid fa-check text-gray-300 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 right-10 flex items-center justify-center"></i>
+            </div>
+            <!-- Card 7 -->
+            <div id="card" class="h-full aspect-[4/5] ml-5 p-5 pb-7 rounded-xl border border-gray-100 bg-white shadow-xl flex justify-center relative">
+                <div class="w-full h-full flex flex-col justify-between">
+                    <img src="./public/assets/image/7.png" class="w-full">
+                    <h1 class="text-lg font-semibold">Solar Red Joystick</h1>
+                    <div class="flex flex-row items-end justify-between">
+                        <div>
+                            <p class="text-lg">Accessories</p>
+                            <p class="text-sm"><span class="text-[#B9080D] font-bold text-xl">$233</span>/Pcs</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping w-12 text-xl text-white aspect-square bg-[#8A8482] flex items-center justify-center rounded-xl"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-x text-gray-200 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 left-10 flex items-center justify-center"></i>
+                <i class="fa-solid fa-star text-[#B9080D] text-[18px] w-10 aspect-square border-[5px] bg-white border-gray-100 rounded-full absolute -bottom-5 flex items-center justify-center"></i>
+                <i class="fa-solid fa-check text-gray-300 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 right-10 flex items-center justify-center"></i>
+            </div>
+            <!-- Card 8 -->
+            <div id="card" class="h-full aspect-[4/5] ml-5 p-5 pb-7 rounded-xl border border-gray-100 bg-white shadow-xl flex justify-center relative">
+                <div class="w-full h-full flex flex-col justify-between">
+                    <img src="./public/assets/image/8.png" class="w-full">
+                    <h1 class="text-lg font-semibold">Solar Red Joystick</h1>
+                    <div class="flex flex-row items-end justify-between">
+                        <div>
+                            <p class="text-lg">Accessories</p>
+                            <p class="text-sm"><span class="text-[#B9080D] font-bold text-xl">$233</span>/Pcs</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping w-12 text-xl text-white aspect-square bg-[#8A8482] flex items-center justify-center rounded-xl"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-x text-gray-200 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 left-10 flex items-center justify-center"></i>
+                <i class="fa-solid fa-star text-[#B9080D] text-[18px] w-10 aspect-square border-[5px] bg-white border-gray-100 rounded-full absolute -bottom-5 flex items-center justify-center"></i>
+                <i class="fa-solid fa-check text-gray-300 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 right-10 flex items-center justify-center"></i>
+            </div>
+            <!-- Card 9 -->
+            <div id="card" class="h-full aspect-[4/5] ml-5 p-5 pb-7 rounded-xl border border-gray-100 bg-white shadow-xl flex justify-center relative">
+                <div class="w-full h-full flex flex-col justify-between">
+                    <img src="./public/assets/image/9.png" class="w-full">
+                    <h1 class="text-lg font-semibold">Solar Red Joystick</h1>
+                    <div class="flex flex-row items-end justify-between">
+                        <div>
+                            <p class="text-lg">Accessories</p>
+                            <p class="text-sm"><span class="text-[#B9080D] font-bold text-xl">$233</span>/Pcs</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping w-12 text-xl text-white aspect-square bg-[#8A8482] flex items-center justify-center rounded-xl"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-x text-gray-200 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 left-10 flex items-center justify-center"></i>
+                <i class="fa-solid fa-star text-[#B9080D] text-[18px] w-10 aspect-square border-[5px] bg-white border-gray-100 rounded-full absolute -bottom-5 flex items-center justify-center"></i>
+                <i class="fa-solid fa-check text-gray-300 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 right-10 flex items-center justify-center"></i>
+            </div>
+            <!-- Card 10 -->
+            <div id="card" class="h-full aspect-[4/5] ml-5 p-5 pb-7 rounded-xl border border-gray-100 bg-white shadow-xl flex justify-center relative">
+                <div class="w-full h-full flex flex-col justify-between">
+                    <img src="./public/assets/image/10.png" class="w-full">
+                    <h1 class="text-lg font-semibold">Solar Red Joystick</h1>
+                    <div class="flex flex-row items-end justify-between">
+                        <div>
+                            <p class="text-lg">Accessories</p>
+                            <p class="text-sm"><span class="text-[#B9080D] font-bold text-xl">$233</span>/Pcs</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping w-12 text-xl text-white aspect-square bg-[#8A8482] flex items-center justify-center rounded-xl"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-x text-gray-200 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 left-10 flex items-center justify-center"></i>
+                <i class="fa-solid fa-star text-[#B9080D] text-[18px] w-10 aspect-square border-[5px] bg-white border-gray-100 rounded-full absolute -bottom-5 flex items-center justify-center"></i>
+                <i class="fa-solid fa-check text-gray-300 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 right-10 flex items-center justify-center"></i>
+            </div>
+            <!-- Card 11 -->
+            <div id="card" class="h-full aspect-[4/5] ml-5 p-5 pb-7 rounded-xl border border-gray-100 bg-white shadow-xl flex justify-center relative">
+                <div class="w-full h-full flex flex-col justify-between">
+                    <img src="./public/assets/image/11.png" class="w-full">
+                    <h1 class="text-lg font-semibold">Solar Red Joystick</h1>
+                    <div class="flex flex-row items-end justify-between">
+                        <div>
+                            <p class="text-lg">Accessories</p>
+                            <p class="text-sm"><span class="text-[#B9080D] font-bold text-xl">$233</span>/Pcs</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping w-12 text-xl text-white aspect-square bg-[#8A8482] flex items-center justify-center rounded-xl"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-x text-gray-200 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 left-10 flex items-center justify-center"></i>
+                <i class="fa-solid fa-star text-[#B9080D] text-[18px] w-10 aspect-square border-[5px] bg-white border-gray-100 rounded-full absolute -bottom-5 flex items-center justify-center"></i>
+                <i class="fa-solid fa-check text-gray-300 text-[12px] w-8 aspect-square border-[3px] bg-white border-gray-100 rounded-full absolute -bottom-4 right-10 flex items-center justify-center"></i>
+            </div>
+        </div>
+        <!-- Recomended -->
+        <div class="w-full px-5 mt-6 flex flex row justify-between">
+            <h3 class="text-xl font-bold">Recomended</h3>
+            <a href="#" class="text-[#B9080D]">View all</a>
+        </div>
+        <!-- Card Console -->
+        <div class="w-full h-[24vh] pt-4 pb-10 px-5 flex flex-row justify-center lg:gap-5 overflow-x-auto">
+            <!-- Card 1 -->
+            <div id="card" class="w-full lg:w-[500px] h-full p-5 rounded-xl border border-gray-100 bg-white shadow-xl flex justify-center relative">
+                <div class="w-full h-full flex flex-row items-center justify-end relative">
+                    <img src="./public/assets/image/Ps5-Console.png" class="absolute h-full left-5 scale-150">
+                    <div class="h-full flex flex-col justify-center">
+                        <p class="text-xl font-semibold">PS5 solar red <span class="text-lg text-[#B9080D]">$788</span><span class="text-sm font-normal text-gray-500">/Pcs</span></p>
+                        <p class="text-lg text-gray-500">Packages</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div id="card" class="w-full lg:w-[500px] h-full p-5 rounded-xl border border-gray-100 bg-white shadow-xl hidden lg:flex justify-center relative">
+                <div class="w-full h-full flex flex-row items-center justify-end relative">
+                    <img src="./public/assets/image/Ps5-Console.png" class="absolute h-full left-5 scale-150">
+                    <div class="h-full flex flex-col justify-center">
+                        <p class="text-xl font-semibold">PS5 solar red <span class="text-lg text-[#B9080D]">$788</span><span class="text-sm font-normal text-gray-500">/Pcs</span></p>
+                        <p class="text-lg text-gray-500">Packages</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div id="card" class="w-full lg:w-[500px] h-full p-5 rounded-xl border border-gray-100 bg-white shadow-xl hidden lg:flex justify-center relative">
+                <div class="w-full h-full flex flex-row items-center justify-end relative">
+                    <img src="./public/assets/image/Ps5-Console.png" class="absolute h-full left-5 scale-150">
+                    <div class="h-full flex flex-col justify-center">
+                        <p class="text-xl font-semibold">PS5 solar red <span class="text-lg text-[#B9080D]">$788</span><span class="text-sm font-normal text-gray-500">/Pcs</span></p>
+                        <p class="text-lg text-gray-500">Packages</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div id="card" class="w-full lg:w-[500px] h-full p-5 rounded-xl border border-gray-100 bg-white shadow-xl hidden lg:flex justify-center relative">
+                <div class="w-full h-full flex flex-row items-center justify-end relative">
+                    <img src="./public/assets/image/Ps5-Console.png" class="absolute h-full left-5 scale-150">
+                    <div class="h-full flex flex-col justify-center">
+                        <p class="text-xl font-semibold">PS5 solar red <span class="text-lg text-[#B9080D]">$788</span><span class="text-sm font-normal text-gray-500">/Pcs</span></p>
+                        <p class="text-lg text-gray-500">Packages</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="w-full h-[12vh] px-5 lg:hidden">
+            <div class="w-full h-full px-6 bg-white rounded-t-3xl flex flex-row items-center justify-between border border-gray-200 shadow-2xl">
+                <div class="flex flex-row items-center gap-2 px-3 py-2 bg-[#B9080D] rounded-full">
+                    <i class="fa-solid fa-compass text-3xl text-white"></i>
+                    <p class="font-semibold text-white">MEET ME</p>
+                </div>
+                <i class="fa-solid fa-gamepad text-2xl text-gray-500"></i>
+                <i class="fa-solid fa-comment text-2xl text-gray-500"></i>
+                <i class="fa-solid fa-user text-2xl text-[#B9080D]"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
