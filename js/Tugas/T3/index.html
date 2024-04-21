@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <!-- JS -->
+    <script src="./src/js/app1.js" defer></script>
+    <title>Disorganized</title>
+</head>
+
+<body>
+    <div id="root" class="w-full h-screen flex items-center justify-center">
+        <div id="box" class="w-[90%] h-1/2 p-5 border-2 border-black rounded-lg flex flex-row">
+            <!-- todo Box REGISTRATION -->
+            <div id="boxRegistration"
+                class="w-1/2 h-full flex flex-col items-center justify-center border-r border-black">
+                <h1 class="text-3xl mb-6 font-semibold">Student Registration</h1>
+                <form action="" class="flex flex-col items-center justify-center gap-3 w-full">
+                    <input type="text" placeholder="name" id="name"
+                        class="border border-black rounded-[3px] px-2 py-1 w-4/5">
+                    <input type="text" placeholder="age" id="age"
+                        class="border border-black rounded-[3px] px-2 py-1 w-4/5">
+                    <input type="text" placeholder="email" id="email"
+                        class="border border-black rounded-[3px] px-2 py-1 w-4/5">
+                    <button id="button" class="px-5 py-2 mt-3 text-white bg-blue-500 rounded-xl">Add Record</button>
+                </form>
+            </div>
+            <!-- todo Box RECORD -->
+            <div id="boxRecord"
+                class="w-1/2 h-full pt-8 flex flex-col items-center justify-start border-l border-black overflow-y-auto">
+                <h1 class="text-3xl mb-6 font-semibold">Record</h1>
+                <table class="w-[90%] table-auto border-collapse border border-black">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="text-center w-1/5 border border-black">Nama</th>
+                            <th class="text-center w-1/5 border border-black">Age</th>
+                            <th class="text-center w-1/5 border border-black">Email</th>
+                            <th class="text-center w-1/5 border border-black">Edit</th>
+                            <th class="text-center w-1/5 border border-black">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inputData">
+                        <tr id="noRecord">
+                            <td id="noRecordValue" colspan="5" class="text-red-500 text-center">No Record Found</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
